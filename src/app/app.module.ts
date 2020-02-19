@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+import { EventsAppComponent } from './events-app.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [ EventsAppComponent],
+  bootstrap:    [ EventsAppComponent ]
 })
 export class AppModule { }
