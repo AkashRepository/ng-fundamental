@@ -5,7 +5,13 @@ export class EventService {
 
   constructor() { }
 
-  const EVENTS = [
+  getEvents() {
+    return EVENTS;
+  }
+
+}
+
+const EVENTS = [
     {
       id: 1,
       name: 'Angular Connect',
@@ -315,9 +321,3 @@ export class EventService {
       ]
     }
   ];
-
-  getEvents() {
-    return EVENTS;
-  }
-
-}

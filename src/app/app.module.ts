@@ -7,7 +7,7 @@ import { EventsListComponent } from './events/events-list/events-list.component'
 import { EventsThumbnailComponent } from './events/events-thumbnail/events-thumbnail.component';
 
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { EventService } from './shared/event.service';
+import { EventService } from './events/shared/event.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],

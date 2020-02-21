@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EventService} from '../shared/event.service';
 
 @Component({
   selector: 'events-list',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./events-list.component.css']
 })
 export class EventsListComponent implements OnInit {
-
-  constructor() { }
+  events:any[];
+  constructor(private eventService:EventService) {}
 
   ngOnInit() {
+     this.events = this.eventService.getEvents();
   }
 
 }

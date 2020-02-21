@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {EventSerivce} from './shared/event.service';
 
 @Component({
   selector: 'events-thumbnail',
@@ -10,7 +9,7 @@ export class EventsThumbnailComponent implements OnInit {
 
   @Input("eventVar") event:any;
 
-  constructor(private _eventService:EventService) { }
+  constructor() {}
 
   ngOnInit() {
   }
